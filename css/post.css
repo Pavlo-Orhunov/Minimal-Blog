@@ -84,6 +84,10 @@
   font-weight: 700;
   line-height: 1.67;
   color: var(--cards-bg-color);
+  transition: color 0.3s ease 0s;
+}
+.author__name:hover {
+  color: var(--accent-color);
 }
 .author__skills {
   line-height: 1.67;
