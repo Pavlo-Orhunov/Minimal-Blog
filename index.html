@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="./index.html" class="header__logo"
+            ><img src="./img/logo.svg" alt="Logo"
+          /></a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link active">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="./post.html" class="menu__link">Post</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="home">
+        <div class="home__sections">
+          <div class="home__main-slider main-slider swiper">
+            <div class="main-slider__wrapper swiper-wrapper">
+              <div class="main-slider__slide swiper-slide">
+                <div class="main-slider__container">
+                  <div class="main-slider__link">
+                    <a
+                      href="https://transfonter.org/"
+                      class="main-slider__category button"
+                      >ADVENTURE</a
+                    >
+                  </div>
+                  <div class="main-slider__title title-light">
+                    Richird Norton photorealistic rendering as real photos
+                  </div>
+                  <div class="main-slider__body text-light">
+                    <div class="main-slider__date">08.08.2021</div>
+                    <div class="main-slider__text">
+                      <p>
+                        Progressively incentivize cooperative systems through
+                        technically sound functionalities. The credibly
+                        productivate seamless data.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="main-slider__bg"
+                  src="./img/hero-slider/01.jpg"
+                  alt="Image"
+                />
+              </div>
+              <div class="main-slider__slide swiper-slide">
+                <div class="main-slider__container">
+                  <div class="main-slider__link">
+                    <a
+                      href="https://css.glass/"
+                      class="main-slider__category button"
+                      >TRAVEL</a
+                    >
+                  </div>
+                  <div class="main-slider__title title-light">
+                    Breathtaking first-person photos around Europe
+                  </div>
+                  <div class="main-slider__body text-light">
+                    <div class="main-slider__date">08.08.2021</div>
+                    <div class="main-slider__text">
+                      <p>
+                        Progressively incentivize cooperative systems through
+                        technically sound functionalities. The credibly
+                        productivate seamless data.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="main-slider__bg"
+                  src="./img/hero-slider/02.jpg"
+                  alt="Image"
+                />
+              </div>
+              <div class="main-slider__slide swiper-slide">
+                <div class="main-slider__container">
+                  <div class="main-slider__link">
+                    <a
+                      href="https://animista.net/"
+                      class="main-slider__category button"
+                      >FASHION</a
+                    >
+                  </div>
+                  <div class="main-slider__title title-light">
+                    Nina Smith vibrant work collab with Nike Dunk
+                  </div>
+                  <div class="main-slider__body text-light">
+                    <div class="main-slider__date">08.08.2021</div>
+                    <div class="main-slider__text">
+                      <p>
+                        Progressively incentivize cooperative systems through
+                        technically sound functionalities. The credibly
+                        productivate seamless data.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="main-slider__bg"
+                  src="./img/hero-slider/03.jpg"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div class="main-slider__bullets bullets">
+              <div class="bullets__container">
+                <div class="bullets__items"></div>
+              </div>
+            </div>
+          </div>
+          <section class="home__regular regular">
+            <div class="regular__container">
+              <div data-item class="regular__header">
+                <h2 class="regular__title title-dark">Popular topics</h2>
+                <nav class="regular__nav nav-regular">
+                  <button type="button" class="nav-regular__cat active">
+                    Adventure
+                  </button>
+                  <button type="button" class="nav-regular__cat">Travel</button>
+                  <button type="button" class="nav-regular__cat">
+                    Fashion
+                  </button>
+                  <button type="button" class="nav-regular__cat">
+                    Technology
+                  </button>
+                </nav>
+              </div>
+              <div class="regular__content">
+                <div class="regular__tab active">
+                  <div class="regular__items">
+                    <article data-item class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">ADVENTURE</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/01.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Dream destinations to visit this year in Paris</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article data-item class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">ADVENTURE</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/05.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Thins to know before visiting Cave in Germany</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article data-item class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">ADVENTURE</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/01.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Dream destinations to visit this year in Paris</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities.
+                        </p>
+                      </div>
+                    </article>
+                    <article data-item class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">ADVENTURE</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/05.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Thins to know before visiting Cave in Germany</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article data-item class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">ADVENTURE</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/01.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Dream destinations to visit this year in Paris</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article data-item class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">ADVENTURE</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/05.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Thins to know before visiting Cave in Germany</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article data-item class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">ADVENTURE</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/01.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Dream destinations to visit this year in Paris</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article data-item class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">ADVENTURE</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/05.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Thins to know before visiting Cave in Germany</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="regular__tab">
+                  <div class="regular__items">
+                    <article class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">TRAVEL</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/02.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Breathtaking first-person photos around Europe</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">TRAVEL</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/02.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Breathtaking first-person photos around Europe</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="regular__tab">
+                  <div class="regular__items">
+                    <article class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">FASHION</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/04.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Instagram artists with great photography skills</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">FASHION</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/06.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Nina Smith vibrant work collab with Nike Dunk</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button">FASHION</a>
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/08.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >25 quality collectors toys inspired by famous
+                          films</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="regular__tab">
+                  <div class="regular__items">
+                    <article class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button"
+                        >TECHNOLOGY</a
+                      >
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/03.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >What collectors need to know about authenticity</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                    <article class="regular__item item-regular">
+                      <a href="#" class="item-regular__cat button"
+                        >TECHNOLOGY</a
+                      >
+                      <a href="#" class="item-regular__image">
+                        <img src="./img/regular/07.jpg" alt="Image" />
+                      </a>
+                      <div class="item-regular__date">08.08.2021</div>
+                      <h4 class="item-regular__title">
+                        <a href="#" class="item-regular__title-link"
+                          >Richard Norton photorealistic rendering as real
+                          photos</a
+                        >
+                      </h4>
+                      <div class="item-regular__text">
+                        <p>
+                          Progressively incentivize cooperative systems through
+                          technically sound functionalities. Credibly
+                          productivate seamless data with flexible schemas.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="home__big-post big-post">
+            <div data-item class="big-post__container">
+              <a href="#" class="big-post__cat button">FASHION</a>
+              <h2 class="big-post__title title-light">
+                <a href="#" class="big-post__title-link"
+                  >Richird Norton photorealistic rendering as real photos</a
+                >
+              </h2>
+              <div class="big-post__text">
+                <p>
+                  Progressively incentivize cooperative systems through
+                  technically sound functionalities. The credibly productivate
+                  seamless data.
+                </p>
+              </div>
+              <a href="#" class="big-post__author">By Jennifer Lawrence</a>
+            </div>
+            <div class="big-post__bg">
+              <img src="./img/big-post/image.jpg" alt="Waves in the ocean" />
+            </div>
+          </section>
+        </div>
+        <section class="home__related related">
+          <div class="related__container">
+            <h2 data-item class="related__title title-dark">Related Posts</h2>
+            <div class="related__items">
+              <article data-item class="related__item item-related">
+                <a href="#" class="item-related__cat button">FASHION</a>
+                <a href="#" class="item-related__content">
+                  <div class="item-related__date">08.08.2021</div>
+                  <h4 class="item-related__title">
+                    Richird Norton photorealistic rendering as real photos
+                  </h4>
+                  <div class="item-related__text">
+                    <p>
+                      Progressively incentivize cooperative systems through
+                      technically sound functionalities. The credibly
+                      productivate seamless data.
+                    </p>
+                  </div>
+                </a>
+                <div class="item-related__image">
+                  <img src="./img/related/01.jpg" alt="Image" />
+                </div>
+              </article>
+              <article data-item class="related__item item-related">
+                <a href="#" class="item-related__cat button">FASHION</a>
+                <a href="#" class="item-related__content">
+                  <div class="item-related__date">08.08.2021</div>
+                  <h4 class="item-related__title">
+                    Richird Norton photorealistic rendering as real photos
+                  </h4>
+                  <div class="item-related__text">
+                    <p>
+                      Progressively incentivize cooperative systems through
+                      technically sound functionalities. The credibly
+                      productivate seamless data.
+                    </p>
+                  </div>
+                </a>
+                <div class="item-related__image">
+                  <img src="./img/related/02.jpg" alt="Image" />
+                </div>
+              </article>
+              <article data-item class="related__item item-related">
+                <a href="#" class="item-related__cat button">FASHION</a>
+                <a href="#" class="item-related__content">
+                  <div class="item-related__date">08.08.2021</div>
+                  <h4 class="item-related__title">
+                    Richird Norton photorealistic rendering as real photos
+                  </h4>
+                  <div class="item-related__text">
+                    <p>
+                      Progressively incentivize cooperative systems through
+                      technically sound functionalities. The credibly
+                      productivate seamless data.
+                    </p>
+                  </div>
+                </a>
+                <div class="item-related__image">
+                  <img src="./img/related/03.jpg" alt="Image" />
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__text">2023 | LOGO</div>
+          <button class="footer__up" type="button">Up</button>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
