@@ -54,13 +54,39 @@ function windowLoad() {
     }
   }
   //Watcher
+  // const items = document.querySelectorAll("[data-item]")
+
+  // const options = {
+  //   threshold: 0.2,
+  // }
+
+  // const callback = (entries) => {
+  //   entries.forEach((entry) => {
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.add("active")
+  //     }
+  //   })
+  // }
+
+  // const observer = new IntersectionObserver(callback, options)
+  // items.forEach((item) => {
+  //   observer.observe(item)
+  // })
+
   const items = document.querySelectorAll("[data-item]")
 
-  const options = {
-    threshold: 0.2,
+  const appearThreshold = 0.3 // Порог для появления элементов
+  const disappearThreshold = 0 // Порог для пропадания элементов
+
+  const appearOptions = {
+    threshold: appearThreshold,
   }
 
-  const callback = (entries) => {
+  const disappearOptions = {
+    threshold: disappearThreshold,
+  }
+
+  const appearCallback = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("active")
@@ -68,9 +94,23 @@ function windowLoad() {
     })
   }
 
-  const observer = new IntersectionObserver(callback, options)
+  const disappearCallback = (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        entry.target.classList.remove("active")
+      }
+    })
+  }
+
+  const appearObserver = new IntersectionObserver(appearCallback, appearOptions)
+  const disappearObserver = new IntersectionObserver(
+    disappearCallback,
+    disappearOptions
+  )
+
   items.forEach((item) => {
-    observer.observe(item)
+    appearObserver.observe(item)
+    disappearObserver.observe(item)
   })
 }
 
