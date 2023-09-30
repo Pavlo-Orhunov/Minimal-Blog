@@ -15,6 +15,8 @@
 - fullscreen block
 - tabs
 
+- **_The result of the work can be viewed at the link:➡️_**
+
 **_The result of the work can be viewed at the link:➡️_**
 [Link to the layout Page](https://pavlo-orhunov.github.io/Minimal-Blog/)
 _(will open in the same window)_
