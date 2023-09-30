@@ -15,6 +15,7 @@ function windowLoad() {
       autoplay: {
         delay: 3000,
       },
+      loop: true,
       pagination: {
         el: ".bullets__items",
         type: "bullets",
@@ -53,67 +54,49 @@ function windowLoad() {
       e.preventDefault()
     }
   }
-  //Watcher
-  // const items = document.querySelectorAll("[data-item]")
-
-  // const options = {
-  //   threshold: 0.2,
-  // }
-
-  // const callback = (entries) => {
-  //   entries.forEach((entry) => {
-  //     if (entry.isIntersecting) {
-  //       entry.target.classList.add("active")
-  //     }
-  //   })
-  // }
-
-  // const observer = new IntersectionObserver(callback, options)
-  // items.forEach((item) => {
-  //   observer.observe(item)
-  // })
-
-  const items = document.querySelectorAll("[data-item]")
-
-  const appearThreshold = 0.3 // Порог для появления элементов
-  const disappearThreshold = 0 // Порог для пропадания элементов
-
-  const appearOptions = {
-    threshold: appearThreshold,
-  }
-
-  const disappearOptions = {
-    threshold: disappearThreshold,
-  }
-
-  const appearCallback = (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active")
-      }
-    })
-  }
-
-  const disappearCallback = (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        entry.target.classList.remove("active")
-      }
-    })
-  }
-
-  const appearObserver = new IntersectionObserver(appearCallback, appearOptions)
-  const disappearObserver = new IntersectionObserver(
-    disappearCallback,
-    disappearOptions
-  )
-
-  items.forEach((item) => {
-    appearObserver.observe(item)
-    disappearObserver.observe(item)
-  })
 }
 
 function getIndex(el) {
   return Array.from(el.parentNode.children).indexOf(el)
 }
+
+// ----- animation --------------
+const items = document.querySelectorAll("[data-animated]")
+
+const appearThreshold = 0.3
+
+const appearOptions = {
+  threshold: appearThreshold,
+}
+
+const appearCallback = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && entry.intersectionRatio >= appearThreshold) {
+      entry.target.classList.add("active")
+    } else {
+      entry.target.classList.remove("active")
+    }
+  })
+}
+
+const appearObserver = new IntersectionObserver(appearCallback, appearOptions)
+
+items.forEach((item) => {
+  appearObserver.observe(item)
+})
+
+const animateOnScroll = () => {
+  items.forEach((item) => {
+    const itemTop = item.getBoundingClientRect().top
+    const windowHeight = window.innerHeight
+
+    if (itemTop - windowHeight <= 0) {
+      item.classList.add("active")
+    } else {
+      item.classList.remove("active")
+    }
+  })
+}
+
+window.addEventListener("scroll", animateOnScroll)
+// ----- END OF animation --------------

@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Post - Minimal Blog</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <a href="./index.html" class="header__logo"
-            ><img src="./img/logo.svg" alt="Logo"
+          <a href="index.html" class="header__logo"
+            ><img src="img/logo.svg" alt="Logo"
           /></a>
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="./index.html" class="menu__link">Home</a>
+                <a href="index.html" class="menu__link">Home</a>
               </li>
               <li class="menu__item">
-                <a href="./post.html" class="menu__link active">Post</a>
+                <a href="post.html" class="menu__link menu__link--active"
+                  >Post</a
+                >
               </li>
             </ul>
           </nav>
@@ -28,14 +30,14 @@
       </header>
       <main class="post">
         <section class="post__big-post big-post">
-          <div data-item class="big-post__container">
-            <a href="#" class="big-post__cat button">FASHION</a>
-            <h2 class="big-post__title title-light">
-              <a href="#" class="big-post__title-link"
-                >Richird Norton photorealistic rendering as real photos</a
-              >
-            </h2>
-            <div class="big-post__text">
+          <div class="big-post__container">
+            <div class="big-post__cat-wrapper">
+              <a href="#" class="big-post__cat button">FASHION</a>
+            </div>
+            <h1 class="big-post__title big-post__title--animated title-light">
+              Richird Norton photorealistic rendering as real photos
+            </h1>
+            <div class="big-post__text big-post__text--animated">
               <p>
                 Progressively incentivize cooperative systems through
                 technically sound functionalities. The credibly productivate
@@ -45,18 +47,18 @@
             <a href="#" class="big-post__author">By Jennifer Lawrence</a>
           </div>
           <div class="big-post__bg">
-            <img src="./img/post/image.jpg" alt="Waves in the ocean" />
+            <img src="img/post/image.jpg" alt="Waves in the ocean" />
           </div>
         </section>
         <div class="post__content">
           <div class="post__container">
-            <aside data-item class="post__info">
+            <aside data-animated class="post__info">
               <div class="post__date">08.08.2021</div>
               <div class="post__duration">4 minutes</div>
             </aside>
             <div class="post__body">
               <div class="post__text">
-                <p data-item>
+                <p data-animated>
                   Seamlessly syndicate cutting-edge architectures rather than
                   collaborative collaboration and idea-sharing. Proactively
                   incubate visionary interfaces whereas premium benefits.
@@ -72,7 +74,7 @@
                   network just in time customer service without real-time
                   scenarios.
                 </p>
-                <p data-item>
+                <p data-animated>
                   Synergistically drive e-business leadership with unique
                   synergy. Compellingly seize market positioning ROI and
                   bricks-and-clicks e-markets. Proactively myocardinate timely
@@ -87,13 +89,13 @@
                   impactful opportunities. Distinctively transition virtual
                   outsourcing with focused e-tailers.
                 </p>
-                <p data-item>
+                <p data-animated>
                   <span>
                     “ Monotonectally seize superior mindshare rather than
                     efficient technology. ”
                   </span>
                 </p>
-                <p data-item>
+                <p data-animated>
                   Compellingly enhance seamless resources through competitive
                   content. Continually actualize 24/365 alignments for
                   resource-leveling platforms. Energistically enhance high
@@ -103,14 +105,14 @@
                   e-services.
                 </p>
               </div>
-              <div data-item class="post__tags">
+              <div data-animated class="post__tags">
                 <a href="#" class="post__tag button">ADVENTURE</a>
                 <a href="#" class="post__tag button">PHOTO</a>
                 <a href="#" class="post__tag button">DESIGN</a>
               </div>
-              <div data-item class="post__author author">
+              <div data-animated class="post__author author">
                 <div class="author__avatar">
-                  <img src="./img/post/avatar.jpg" alt="Avatar" />
+                  <img src="img/post/avatar.jpg" alt="Avatar" />
                 </div>
                 <div class="author__body">
                   <a href="" class="author__name">By Jennifer Lawrence</a>
@@ -122,9 +124,11 @@
         </div>
         <section class="post__related related">
           <div class="related__container">
-            <h2 data-item class="related__title title-dark">Related Posts</h2>
+            <h2 data-animated class="related__title title-dark">
+              Related Posts
+            </h2>
             <div class="related__items">
-              <article data-item class="related__item item-related">
+              <article data-animated class="related__item item-related">
                 <a href="#" class="item-related__cat button">FASHION</a>
                 <a href="#" class="item-related__content">
                   <div class="item-related__date">08.08.2021</div>
@@ -140,10 +144,10 @@
                   </div>
                 </a>
                 <div class="item-related__image">
-                  <img src="./img/related/01.jpg" alt="Image" />
+                  <img src="img/related/01.jpg" alt="Image" />
                 </div>
               </article>
-              <article data-item class="related__item item-related">
+              <article data-animated class="related__item item-related">
                 <a href="#" class="item-related__cat button">FASHION</a>
                 <a href="#" class="item-related__content">
                   <div class="item-related__date">08.08.2021</div>
@@ -159,10 +163,10 @@
                   </div>
                 </a>
                 <div class="item-related__image">
-                  <img src="./img/related/02.jpg" alt="Image" />
+                  <img src="img/related/02.jpg" alt="Image" />
                 </div>
               </article>
-              <article data-item class="related__item item-related">
+              <article data-animated class="related__item item-related">
                 <a href="#" class="item-related__cat button">FASHION</a>
                 <a href="#" class="item-related__content">
                   <div class="item-related__date">08.08.2021</div>
@@ -178,7 +182,7 @@
                   </div>
                 </a>
                 <div class="item-related__image">
-                  <img src="./img/related/03.jpg" alt="Image" />
+                  <img src="img/related/03.jpg" alt="Image" />
                 </div>
               </article>
             </div>
@@ -192,7 +196,6 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

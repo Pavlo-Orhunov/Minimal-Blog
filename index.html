@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal Blog</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper@10-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <a href="./index.html" class="header__logo"
-            ><img src="./img/logo.svg" alt="Logo"
+          <a href="index.html" class="header__logo"
+            ><img src="img/logo.svg" alt="Logo"
           /></a>
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="./index.html" class="menu__link active">Home</a>
+                <a href="index.html" class="menu__link menu__link--active"
+                  >Home</a
+                >
               </li>
               <li class="menu__item">
-                <a href="./post.html" class="menu__link">Post</a>
+                <a href="post.html" class="menu__link">Post</a>
               </li>
             </ul>
           </nav>
@@ -61,7 +60,7 @@
                 </div>
                 <img
                   class="main-slider__bg"
-                  src="./img/hero-slider/01.jpg"
+                  src="img/hero-slider/01.jpg"
                   alt="Image"
                 />
               </div>
@@ -92,7 +91,7 @@
                 </div>
                 <img
                   class="main-slider__bg"
-                  src="./img/hero-slider/02.jpg"
+                  src="img/hero-slider/02.jpg"
                   alt="Image"
                 />
               </div>
@@ -123,7 +122,7 @@
                 </div>
                 <img
                   class="main-slider__bg"
-                  src="./img/hero-slider/03.jpg"
+                  src="img/hero-slider/03.jpg"
                   alt="Image"
                 />
               </div>
@@ -136,7 +135,7 @@
           </div>
           <section class="home__regular regular">
             <div class="regular__container">
-              <div data-item class="regular__header">
+              <div data-animated class="regular__header">
                 <h2 class="regular__title title-dark">Popular topics</h2>
                 <nav class="regular__nav nav-regular">
                   <button type="button" class="nav-regular__cat active">
@@ -154,10 +153,10 @@
               <div class="regular__content">
                 <div class="regular__tab active">
                   <div class="regular__items">
-                    <article data-item class="regular__item item-regular">
+                    <article data-animated class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">ADVENTURE</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/01.jpg" alt="Image" />
+                        <img src="img/regular/01.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -173,10 +172,10 @@
                         </p>
                       </div>
                     </article>
-                    <article data-item class="regular__item item-regular">
+                    <article data-animated class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">ADVENTURE</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/05.jpg" alt="Image" />
+                        <img src="img/regular/05.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -192,10 +191,10 @@
                         </p>
                       </div>
                     </article>
-                    <article data-item class="regular__item item-regular">
+                    <article data-animated class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">ADVENTURE</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/01.jpg" alt="Image" />
+                        <img src="img/regular/01.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -210,10 +209,10 @@
                         </p>
                       </div>
                     </article>
-                    <article data-item class="regular__item item-regular">
+                    <article data-animated class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">ADVENTURE</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/05.jpg" alt="Image" />
+                        <img src="img/regular/05.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -229,10 +228,10 @@
                         </p>
                       </div>
                     </article>
-                    <article data-item class="regular__item item-regular">
+                    <article data-animated class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">ADVENTURE</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/01.jpg" alt="Image" />
+                        <img src="img/regular/01.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -248,10 +247,10 @@
                         </p>
                       </div>
                     </article>
-                    <article data-item class="regular__item item-regular">
+                    <article data-animated class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">ADVENTURE</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/05.jpg" alt="Image" />
+                        <img src="img/regular/05.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -267,10 +266,10 @@
                         </p>
                       </div>
                     </article>
-                    <article data-item class="regular__item item-regular">
+                    <article data-animated class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">ADVENTURE</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/01.jpg" alt="Image" />
+                        <img src="img/regular/01.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -286,10 +285,10 @@
                         </p>
                       </div>
                     </article>
-                    <article data-item class="regular__item item-regular">
+                    <article data-animated class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">ADVENTURE</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/05.jpg" alt="Image" />
+                        <img src="img/regular/05.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -312,7 +311,7 @@
                     <article class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">TRAVEL</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/02.jpg" alt="Image" />
+                        <img src="img/regular/02.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -331,7 +330,7 @@
                     <article class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">TRAVEL</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/02.jpg" alt="Image" />
+                        <img src="img/regular/02.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -354,7 +353,7 @@
                     <article class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">FASHION</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/04.jpg" alt="Image" />
+                        <img src="img/regular/04.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -373,7 +372,7 @@
                     <article class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">FASHION</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/06.jpg" alt="Image" />
+                        <img src="img/regular/06.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -392,7 +391,7 @@
                     <article class="regular__item item-regular">
                       <a href="#" class="item-regular__cat button">FASHION</a>
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/08.jpg" alt="Image" />
+                        <img src="img/regular/08.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -418,7 +417,7 @@
                         >TECHNOLOGY</a
                       >
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/03.jpg" alt="Image" />
+                        <img src="img/regular/03.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -439,7 +438,7 @@
                         >TECHNOLOGY</a
                       >
                       <a href="#" class="item-regular__image">
-                        <img src="./img/regular/07.jpg" alt="Image" />
+                        <img src="img/regular/07.jpg" alt="Image" />
                       </a>
                       <div class="item-regular__date">08.08.2021</div>
                       <h4 class="item-regular__title">
@@ -462,10 +461,10 @@
             </div>
           </section>
           <section class="home__big-post big-post">
-            <div data-item class="big-post__container">
+            <div data-animated class="big-post__container">
               <a href="#" class="big-post__cat button">FASHION</a>
               <h2 class="big-post__title title-light">
-                <a href="#" class="big-post__title-link"
+                <a href="post.html" class="big-post__title-link"
                   >Richird Norton photorealistic rendering as real photos</a
                 >
               </h2>
@@ -479,15 +478,17 @@
               <a href="#" class="big-post__author">By Jennifer Lawrence</a>
             </div>
             <div class="big-post__bg">
-              <img src="./img/big-post/image.jpg" alt="Waves in the ocean" />
+              <img src="img/big-post/image.jpg" alt="Waves in the ocean" />
             </div>
           </section>
         </div>
         <section class="home__related related">
           <div class="related__container">
-            <h2 data-item class="related__title title-dark">Related Posts</h2>
+            <h2 data-animated class="related__title title-dark">
+              Related Posts
+            </h2>
             <div class="related__items">
-              <article data-item class="related__item item-related">
+              <article data-animated class="related__item item-related">
                 <a href="#" class="item-related__cat button">FASHION</a>
                 <a href="#" class="item-related__content">
                   <div class="item-related__date">08.08.2021</div>
@@ -503,10 +504,10 @@
                   </div>
                 </a>
                 <div class="item-related__image">
-                  <img src="./img/related/01.jpg" alt="Image" />
+                  <img src="img/related/01.jpg" alt="Image" />
                 </div>
               </article>
-              <article data-item class="related__item item-related">
+              <article data-animated class="related__item item-related">
                 <a href="#" class="item-related__cat button">FASHION</a>
                 <a href="#" class="item-related__content">
                   <div class="item-related__date">08.08.2021</div>
@@ -522,10 +523,10 @@
                   </div>
                 </a>
                 <div class="item-related__image">
-                  <img src="./img/related/02.jpg" alt="Image" />
+                  <img src="img/related/02.jpg" alt="Image" />
                 </div>
               </article>
-              <article data-item class="related__item item-related">
+              <article data-animated class="related__item item-related">
                 <a href="#" class="item-related__cat button">FASHION</a>
                 <a href="#" class="item-related__content">
                   <div class="item-related__date">08.08.2021</div>
@@ -541,7 +542,7 @@
                   </div>
                 </a>
                 <div class="item-related__image">
-                  <img src="./img/related/03.jpg" alt="Image" />
+                  <img src="img/related/03.jpg" alt="Image" />
                 </div>
               </article>
             </div>
@@ -555,7 +556,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/swiper@10-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

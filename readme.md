@@ -2,13 +2,36 @@
 
 ## Code Only <br>
 
-**8 281 переглядів** <br>
+**_LAYOUT FEATURES:_**
 
-_10 січня 2023 р._ <br>
+- layout made on Figma
+- HTML using BEM methodology
+- fully responsive layout up to 320px width
+- no use of any preprocessors and assemblers (manual work)
+- 2 pages
+- Swiper slider
+- animation
+- up scrolling from footer button
+- fullscreen block
+- tabs
 
-Адаптивна верстка сайту з нуля. Є таби та трохи анімації. HTML CSS FIGMA.
+**The result of the work can be viewed at the link: **
+[Link to the layout Page](https://pavlo-orhunov.github.io/Minimal-Blog/)
+_(will open in the same window)_
 
-`Лінк на відео`
+`Link to the video`
 https://youtu.be/zVJutTmB0XE
 
 [![Адаптивна верстка сайту. HTML CSS FIGMA](https://img.youtube.com/vi/zVJutTmB0XE/hqdefault.jpg "Адаптивна верстка сайту з нуля. HTML CSS FIGMA")](https://youtu.be/zVJutTmB0XE)
+
+<br>
+
+**_Preview for desktop (1920px) layout version:_**
+
+![Desktop version preview](https://github.com/Pavlo-Orhunov/Home-Services/blob/master/images/desktop.jpg "Desktop version preview")
+
+<br>
+
+**_Preview for mobile (320px) layout version:_**
+
+![Mobile version preview](https://github.com/Pavlo-Orhunov/Home-Services/blob/master/images/mobile.jpg "Mobile version preview")
