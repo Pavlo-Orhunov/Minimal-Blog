@@ -35,3 +35,6 @@ https://youtu.be/zVJutTmB0XE
 **_Preview for mobile (320px) layout version:_** ⬇️
 
 ![Mobile version preview](https://github.com/Pavlo-Orhunov/Minimal-Blog/blob/master/img/mobile.jpg "Mobile version preview")
+
+
+
