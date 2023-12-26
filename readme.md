@@ -4,14 +4,14 @@
 
 **_LAYOUT FEATURES:_**
 
-— layout made on Figma
-— HTML using BEM methodology
+- layout made on Figma
+- HTML using BEM methodology
 - fully responsive layout up to 320px width
 - no use of any preprocessors and assemblers (manual work)
 - 2 pages
 - Swiper slider
 - animation
-- up scrolling from footer button
+- scroll up when clicking button in footer
 - fullscreen block
 - tabs
 
