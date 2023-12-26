@@ -11,7 +11,7 @@
 - 2 pages
 - Swiper slider
 - animation
-- up scrolling from footer button
+- scroll up when clicking button in footer
 - fullscreen block
 - tabs
 
